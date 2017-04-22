@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "'Droid Sans Mono For Powerline', Consolas, monospace",
+    "editor.lineNumbers": "on",
+    "editor.glyphMargin": true,
+    "editor.rulers": [100],
+    "editor.tabSize": 4,
+    "editor.fontWeight": "normal",
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.roundedSelection": false,
+    "editor.folding": true,
+    "editor.renderIndentGuides": true,
+    "editor.wordWrap": "off",
+    "editor.renderControlCharacters": true,
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
+    "files.autoSave": "onWindowChange",
+
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": false,
+
+    "git.autofetch": false,
+    "git.enabled": true,
+    "git.confirmSync": true,
+
+    "extensions.autoUpdate": true,
+
+    "telemetry.enableTelemetry": false,
+
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.welcome.enabled": false
+}
