@@ -35,7 +35,7 @@ export PATH=$HOME/bin:$HOME/dotfiles/bin:$PATH
 alias ls='ls --color=auto'
 alias ll='ls -la'
 
-POWERLEVEL9K_INSTALLATION_PATH=~/dotfiles/zsh
+POWERLEVEL9K_INSTALLATION_PATH=~/dotfiles/zsh/powerlevel9k
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs dir_writable status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs virtualenv command_execution_time)
 
@@ -57,4 +57,4 @@ POWERLEVEL9K_EXECUTION_TIME_ICON=''
 
 DEFAULT_USER=`whoami`
 
-source ~/dotfiles/zsh/powerlevel9k.zsh-theme
+source ~/dotfiles/zsh/powerlevel9k/powerlevel9k.zsh-theme
