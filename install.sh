@@ -18,3 +18,5 @@ if [ ! -h ~/.config/Code/User/settings.json ]; then
     ln -s ~/dotfiles/code/keybindings.json keybindings.json
     popd
 fi
+
+cat code/extensions.txt | xargs -L 1 code --install-extension

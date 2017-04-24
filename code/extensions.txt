@@ -1,0 +1,10 @@
+alefragnani.Bookmarks
+donjayamanne.python
+keyring.Lua
+lukehoban.Go
+ms-vscode.cpptools
+ms-vscode.csharp
+ms-vscode.latex
+ms-vscode.PowerShell
+PeterJausovec.vscode-docker
+twxs.cmake
