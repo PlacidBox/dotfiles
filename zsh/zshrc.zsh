@@ -1,4 +1,5 @@
 export LANG="en_AU.UTF-8"
+export TERM="xterm-256color"
 
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle ':completion:*' format '%d:'
@@ -26,9 +27,16 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=10000
 
+
+autoload -U select-word-style
+select-word-style bash
+
 bindkey -e
 bindkey "^[[1;5C" forward-word
+bindkey "^[[5C" forward-word
+
 bindkey "^[[1;5D" backward-word
+bindkey "^[[5D" backward-word
 
 export PATH=$HOME/bin:$HOME/dotfiles/bin:$PATH
 
@@ -58,3 +66,7 @@ POWERLEVEL9K_EXECUTION_TIME_ICON=''
 DEFAULT_USER=`whoami`
 
 source ~/dotfiles/zsh/powerlevel9k/powerlevel9k.zsh-theme
+
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
