@@ -12,6 +12,7 @@
     "editor.folding": true,
     "editor.renderIndentGuides": true,
     "editor.wordWrap": "off",
+    "editor.minimap.enabled": false,
     "editor.renderControlCharacters": true,
 
     "files.trimTrailingWhitespace": true,
@@ -29,11 +30,10 @@
     "extensions.autoUpdate": true,
 
     "telemetry.enableTelemetry": false,
+
     "workbench.welcome.enabled": false,
-    "[cpp]": {
-        "editor.quickSuggestions": false
-    },
-    "[c]": {
-        "editor.quickSuggestions": false
-    }
+    "workbench.iconTheme": null,
+
+    "window.openFilesInNewWindow": "off",
+    "window.openFoldersInNewWindow": "on"
 }
