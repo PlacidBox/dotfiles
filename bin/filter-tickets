@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec grep -Po "#[0-9]+" $1 | sort | uniq -u | paste -sd "," -

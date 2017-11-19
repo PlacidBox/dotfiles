@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+# Decodes messagepack data from arguments to script, or stdin if there are no
+# arguments. You will have to run 'pip install msgpack-python' to install the
+# required libraries first.
+
+import msgpack
+import pprint
+import fileinput
+import array
+import re
+import sys
+
+def decode(string_val):
+    hex_values = re.findall('\\w+', string_val)
+    byte_values = bytearray([int(x, 16) for x in hex_values])
+    decoded_obj = msgpack.unpackb(byte_values, use_list=True, encoding='utf-8')
+    pprint.pprint(decoded_obj)
+
+def read_stdin():
+    for line in fileinput.input():
+        decode(line)
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        decode(" ".join(sys.argv[1:]))
+    else:
+        read_stdin()

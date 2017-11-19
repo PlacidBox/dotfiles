@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "'Droid Sans Mono For Powerline', Consolas, monospace",
+    "editor.fontFamily": "'Source Code Pro For Powerline', Consolas, monospace",
     "editor.lineNumbers": "on",
     "editor.glyphMargin": true,
     "editor.rulers": [100],
@@ -31,9 +31,12 @@
 
     "telemetry.enableTelemetry": false,
 
-    "workbench.welcome.enabled": false,
     "workbench.iconTheme": null,
+    "workbench.colorTheme": "Default Light+",
 
     "window.openFilesInNewWindow": "off",
-    "window.openFoldersInNewWindow": "on"
+    "window.openFoldersInNewWindow": "on",
+
+    "docker.showExplorer": false,
+    "window.zoomLevel": 0
 }
